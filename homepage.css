@@ -1,0 +1,295 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:lightgray;
+    color: #000;
+    fill-opacity: 10%;
+}
+
+/* Header Styles */
+.header {
+    background-image: url("img/cyberpunk-gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 550px;
+    display: grid;
+    padding: 100px 50px;
+}
+
+.header h1{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#000;
+    font-size: 35px;
+    font-style: bold;
+}
+
+.header h2{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#000;
+    font-size: 35px;
+    font-style: bold;
+    text-shadow: 2px 2px #000;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #ffffff;
+    padding: 85px;
+    width: 85%;
+    place-self: center;
+}
+
+/* About Section Styles */
+.about {
+    padding: 120px 50px;
+    display: flex;
+    height: auto;                    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('img/gray.jpg');
+    background-repeat: auto;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+}
+
+.about-image {
+    place-self: center;
+    width: 80px;
+    background-color: black;
+}
+
+.about-image img {
+    width: 520px;
+    height: 420px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.content {
+    place-self: center;
+    text-align: center;
+    line-height: 22px;
+    padding: 50px 50px;
+    width: 50%;
+    letter-spacing: 0.8px;
+}
+
+
+/* image gallery */
+
+.gallery-image {
+    padding: 100px 50px;
+    height: auto;                    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/galaxy1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.gallery-image h1{
+    text-align: center;
+}
+
+.gallery-image .responsive img {
+    object-fit: cover;
+    object-position: top;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.gallery-image .responsive .gallery img{
+    height:350px;
+    width: 90%;
+    object-fit: cover;
+    transition: .2s linear;
+    border: 5px solid #ffffff;
+    border-radius: 10px; 
+
+}
+
+.responsive {
+    padding: 6px 6px;
+    display: inline-grid;
+    width: 33%;
+    box-sizing: border-box;
+    z-index: 100;
+} 
+
+.gallery img:hover{
+    transform: scale(1.1);
+}
+
+/*mobile legends */
+
+.mobile-legends{
+    padding: 100px 50px;
+    height: auto;        
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/mlbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;   
+}
+
+.mobile-legends h1{
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color:#000;
+    text-align: center;
+}
+
+.mobile-legends .image img{
+    height: 100px;
+    width: 200px;
+    object-position: top;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    border: 7px solid #000;
+    border-radius: 15px;  
+
+}
+
+.mobile-legends .image .img img{  
+    height:220px;
+    width:100%; 
+    object-fit: cover;
+    transition: .2s linear;
+    
+}
+
+.image{
+    padding: 6px 6px;
+    display: inline-grid;
+    width: 33%;
+    box-sizing: border-box;
+    z-index: 100;
+} 
+
+.image img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.video-container {
+    max-width: auto; 
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 450px;
+    height: 200px;
+    z-index: 100;
+    border: 7px solid #000;
+}
+
+
+/* Hobies and Interest */
+
+.hobbies-interests{
+    padding: 100px 50px;
+    height: auto;        
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hobbies');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;   
+}
+
+.hobbies-interests h1{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.hobbies-interests h2{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.hobbies-interests h3{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+.hobbies-interests li{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.hobbies-interests .image img{
+    height: 250px;
+    width: 350px;
+    object-position: top;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    border: 7px solid #000;
+    border-radius: 15px; 
+    transition: .2s linear;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.bottnav {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.bottnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bottnav a:hover {
+    background-color:lightgray;
+    color: black;
+    fill-opacity: 10%;
+}
+
+
+
+
